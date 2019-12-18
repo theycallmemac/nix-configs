@@ -30,4 +30,5 @@
     ATTR{address}=="3a:47:4d:92:aa:04", NAME="eth0"
     
   '';
+   networking.firewall.allowedTCPPorts = [ 80 ];
 }

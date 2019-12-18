@@ -3,7 +3,7 @@
     ./hardware-configuration.nix
     ./networking.nix
     ../../services/ssh.nix
-    
+    ../../services/httpd.nix
   ];
 
   boot.cleanTmpDir = true;
