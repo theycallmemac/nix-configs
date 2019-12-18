@@ -1,0 +1,1 @@
+/tmp/nixos-rebuild.y8wUna/nix
