@@ -7,7 +7,7 @@
   [
     {       
       hostName = "localhost";
-      documentRoot = "/var/www/html";
+      documentRoot = "/var/www/jamesmcdermott.ie/public";
       enableUserDir = true;
       serverAliases = [ "localhost" ];
       enableSSL = false;
