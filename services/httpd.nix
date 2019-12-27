@@ -1,16 +1,16 @@
 {
   services.httpd.enable = true;
-  services.httpd.adminAddr = "localhost";
-  services.httpd.extraModules = [ "http2" ];
-
+  services.httpd.adminAddr = "james.mcdermott7@mail.dcu.ie";
   services.httpd.virtualHosts =
-  [
-    {       
-      hostName = "localhost";
-      documentRoot = "/var/www/jamesmcdermott.ie/public";
-      enableUserDir = true;
-      serverAliases = [ "localhost" ];
-      enableSSL = false;
-    }
-  ];
+    [ { hostName = "localhosting.ie";
+        documentRoot = "/var/www/jamesmcdermott.ie/public";
+	globalRedirect = "https://localhosting.ie/";
+      }
+      { hostName = "localhosting.ie";
+        documentRoot = "/var/www/jamesmcdermott.ie/public";
+        enableSSL = true;
+        sslServerCert = "/etc/letsencrypt/live/localhosting.ie/fullchain.pem";
+        sslServerKey = "/etc/letsencrypt/live/localhosting.ie/privkey.pem";
+      }
+    ];
 }
