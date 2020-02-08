@@ -2,6 +2,9 @@
 with lib;
 let 
         cfg = config.services.icecast;
+	admin-secret = "/var/secrets/icecast-admin.secret";
+	source-secret = "/var/secrets/icecast-source.secret";
+	relay-secret = "/var/secrets/icecast-relay.secret";
 in {
 	services.icecast.enable = true;
 	services.icecast.hostname = "localhosting.ie";
@@ -21,11 +24,11 @@ in {
     </limits>
 
    <authentication>
+	<source-password>${lib.fileContents source-secret}</source-password>
 	<relay-user>relay</relay-user>
-	<relay-password>iG3ne]mo</relay-password>
+	<relay-password>${lib.fileContents relay-secret}</relay-password>
 	<admin-user>admin</admin-user>
-	<admin-password>testIce</admin-password>
-	<source-password>ice</source-password>
+	<admin-password>${lib.fileContents admin-secret}</admin-password>
     </authentication>
 
     <directory>
