@@ -1,9 +1,0 @@
-NAME=$1
-# apache needs to be stopped first
-systemctl stop httpd
-
-# generate certificate for $NAME
-certbot certonly --standalone -d ${NAME}
-
-# restart apache web server
-systemctl start httpd
