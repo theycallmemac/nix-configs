@@ -3,6 +3,7 @@
     "${modulesPath}/virtualisation/amazon-image.nix" 
     ./networking.nix
     ./environment.nix
+    ./users.nix
     ./common/region.nix
     ./services/httpd.nix
     ./services/ssh.nix
