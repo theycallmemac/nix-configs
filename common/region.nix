@@ -1,8 +1,10 @@
 {
   time.timeZone = "Europe/Dublin";
+  console = {
+    font = "Lat2-Terminus16";
+    keyMap = "us";
+  };
   i18n = {
-    consoleFont = "Lat2-Terminus16";
-    consoleKeyMap = "us";
     defaultLocale = "en_IE.UTF-8";
   };
 }
