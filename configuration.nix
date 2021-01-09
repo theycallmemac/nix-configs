@@ -1,6 +1,7 @@
 { modulesPath, ... }: {
   imports = [ 
     "${modulesPath}/virtualisation/amazon-image.nix" 
+    ./home.nix
     ./networking.nix
     ./environment.nix
     ./users.nix
