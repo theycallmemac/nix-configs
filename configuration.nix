@@ -10,4 +10,5 @@
     ./services/ssh.nix
   ];
   ec2.hvm = true;
+  ec2.efi = true;
 }

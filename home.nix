@@ -7,10 +7,6 @@
       userName  = "James McDermott";
       userEmail = "james.mcdermott7@mail.dcu.ie";
     };
-    programs.zsh = {
-      enable = true;
-      plugins = [ "git" ];
-    };
     programs.vim = {
       enable = true;
       plugins = with pkgs.vimPlugins; [ 
