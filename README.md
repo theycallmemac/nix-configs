@@ -11,5 +11,3 @@ When creating the instance, ensure you allow at least 4GB of disk space. Home-Ma
 ### Deploying
 
 After launching an instance with the above AMI, the deployment of these configs has been automated with the following [bash script](https://github.com/theycallmemac/Shell-Scripts/blob/master/admin-scripts/nix-setup.sh).
-
-
