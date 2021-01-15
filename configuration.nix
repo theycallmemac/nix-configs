@@ -11,4 +11,9 @@
   ];
   ec2.hvm = true;
   ec2.efi = true;
+  swapDevices = [ 
+    { 
+      device = "/swapfile";
+    } 
+  ];
 }

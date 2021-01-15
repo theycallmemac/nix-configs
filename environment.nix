@@ -6,5 +6,6 @@
     pkgs.bind
     pkgs.awscli
     pkgs.pass
+    pkgs.tmux
   ];
 }
