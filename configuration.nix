@@ -9,7 +9,8 @@
     ./home-manager/root/zsh.nix
     ./home-manager/root/git.nix
     ./networking.nix
-    ./services/httpd.nix
+    ./services/cron.nix
+    ./services/httpd
     ./services/ssh.nix
     ./services/fail2ban.nix
     ./users.nix
