@@ -2,12 +2,8 @@
   imports = [ 
     "${modulesPath}/virtualisation/amazon-image.nix" 
     ./common/region.nix
-    ./environment.nix
     <home-manager/nixos>
-    ./home-manager/root/vim.nix
-    ./home-manager/root/tmux.nix
-    ./home-manager/root/zsh.nix
-    ./home-manager/root/git.nix
+    ./home-manager
     ./networking.nix
     ./services/cron.nix
     ./services/httpd
