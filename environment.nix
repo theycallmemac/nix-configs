@@ -1,11 +1,12 @@
 { pkgs, ... }: {
   environment.systemPackages = [
-    pkgs.git 
-    pkgs.vim 
-    pkgs.htop 
-    pkgs.bind
     pkgs.awscli
+    pkgs.bind
+    pkgs.git 
+    pkgs.hugo
+    pkgs.htop 
     pkgs.pass
     pkgs.tmux
+    pkgs.vim 
   ];
 }
