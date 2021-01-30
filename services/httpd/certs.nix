@@ -3,11 +3,11 @@
   security.acme = {
     acceptTerms = true;
     certs = {
-      "localhosting.ie" = {
+      "jamesmcdermott.ie" = {
         email = "james.mcdermott7@mail.dcu.ie";
         group = lib.mkForce "acme";
       };
-      "test.localhosting.ie" = {
+      "destinycare.ie" = {
         email = "james.mcdermott7@mail.dcu.ie";
         group = lib.mkForce "acme";
       };
