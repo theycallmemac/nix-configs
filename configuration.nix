@@ -8,6 +8,8 @@
     ./services/cron.nix
     ./services/httpd
     ./services/ssh.nix
+    ./services/ssh.nix
+    ./services/amazon-ssm-agent.nix
     ./services/fail2ban.nix
     ./users.nix
   ];
