@@ -12,5 +12,6 @@
     pkgs.go
     pkgs.hugo
     pkgs.htop
+    pkgs.python3
   ];
 }

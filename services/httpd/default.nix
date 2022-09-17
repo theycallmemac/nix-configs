@@ -10,12 +10,6 @@
         forceSSL = true;
         enableACME = true;
     };
-    "destinycare.ie" = {
-        documentRoot = "/var/www/destinycare.ie";
-        adminAddr = "james.mcdermott7@mail.dcu.ie";
-        forceSSL = true;
-        enableACME = true;
-    };
   };
 }
 
